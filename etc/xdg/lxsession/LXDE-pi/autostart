@@ -1,0 +1,8 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+#@xscreensaver -no-splash
+@xset s off         # don't activate screensaver 
+@xset -dpms         # disable DPMS (Energy Star) features. 
+@xset s noblank     # don't blank the video device
+@chromium-browser --kiosk
+@unclutter -idle 1

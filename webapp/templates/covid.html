@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<META HTTP-EQUIV="refresh" CONTENT="3600">
+		<link rel="stylesheet" href='/static/style.css' />
+	</head>
+	<style>
+	table, th, td {
+		font-size: .95rem
+	}
+	</style>
+
+	<body>
+		<div class="header">
+			<h2>Covid-19 Status</h2>
+			<h3>{{s_state}} | {{d_county}} | Einwohner: {{d_population}}</h3>
+			<h4>Last update: {{d_lastUpdate}}</h4>
+		</div>
+
+
+		<div class="content-image">
+			<div class="content-text">
+				<table>
+					<tr>
+						<td>Cases</td>
+						<td>{{d_cases}}</td>
+					</tr>
+					<tr>
+						<td>Cases (week)</td>
+						<td>{{d_casesPerWeek}}</td>
+					</tr>
+					<tr>
+						<td>Cases (new)</td>
+						<td>{{d_delta_cases}}</td>
+					</tr>
+					<tr>
+						<td>Deaths</td>
+						<td>{{d_deaths}}</td>
+					</tr>
+					<tr>
+						<td>Incidence</td>
+						<td>{{d_weekIncidence}}</td>
+					</tr>
+				</table> 
+				<table>
+					<tr>
+						<td>{{s_state}} - Cases</td>
+						<td>{{s_cases}}</td>
+					</tr>
+					<tr>
+						<td>{{s_state}} - Cases (new)</td>
+						<td>{{s_delta_cases}}</td>
+					</tr>
+					<tr>
+						<td>{{s_state}} - Incidence</td>
+						<td>{{s_weekIncidence}}</td>
+					</tr>
+					<tr>
+						<td>{{s_state}} - Hospitalization</td>
+						<td>{{s_hospitalization_incidence7Days}}</td>
+					</tr>
+				</table> 
+			</div>
+		</div>
+
+	</body>
+</html>

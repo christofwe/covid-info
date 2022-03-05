@@ -1,0 +1,36 @@
+body {
+    /* background: #80cdec;
+    background-image:linear-gradient(135deg, transparent 30%, #af4361 70%); */
+    background: #121927;
+    background-image:linear-gradient(135deg, transparent 30%, #1B2333 70%);
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 5px;
+    margin: 5px;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.header, .footer {
+  color: #9FEF00;
+}
+
+th,td {
+  color: #9FEF00;
+  text-align: left;
+  font-size: 14pt;
+}
+
+.content-image {
+  background-image: url("/static/covid1.png");
+  background-size: cover;
+  height: 360;
+}
+
+.content-text {
+  font-size: 14pt;
+}
